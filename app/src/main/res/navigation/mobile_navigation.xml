@@ -15,7 +15,8 @@
     <fragment android:id="@+id/destination_three" android:name="com.agarcia.navigationcomponent.Fragments.FragmentThree"
               android:label="Three" tools:layout="@layout/fragment_three">
         <action android:id="@+id/next_action" app:destination="@id/destination_four"/>
-        <action android:id="@+id/home_action" app:destination="@id/destination_home"/>
+        <action android:id="@+id/home_action" app:destination="@id/destination_home"
+                app:popUpTo="@+id/destination_home"/>
     </fragment>
     <fragment android:id="@+id/destination_four" android:name="com.agarcia.navigationcomponent.Fragments.FragmentFour"
               android:label="Four" tools:layout="@layout/fragment_four"/>
