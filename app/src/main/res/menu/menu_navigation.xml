@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/destination_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+    <item
+            android:id="@+id/destination_two"
+            android:icon="@drawable/ic_looks_two_black_24dp"
+            android:title="Two" />
+
+    <item
+            android:id="@+id/destination_three"
+            android:icon="@drawable/ic_looks_3_black_24dp"
+            android:title="Three" />
+
+    <item
+            android:id="@+id/destination_four"
+            android:icon="@drawable/ic_looks_4_black_24dp"
+            android:title="Four" />
+</menu>
