@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/mobile_navigation"
+            app:startDestination="@id/destination_home">
+
+    <fragment android:id="@+id/destination_home" android:name="com.agarcia.navigationcomponent.Fragments.HomeFragment"
+              android:label="Home" tools:layout="@layout/fragment_home">
+        <action android:id="@+id/next_action" app:destination="@id/destination_two"/>
+    </fragment>
+    <fragment android:id="@+id/destination_two" android:name="com.agarcia.navigationcomponent.Fragments.FragmentTwo"
+              android:label="Two" tools:layout="@layout/fragment_two">
+        <action android:id="@+id/next_action" app:destination="@id/destination_three"/>
+    </fragment>
+    <fragment android:id="@+id/destination_three" android:name="com.agarcia.navigationcomponent.Fragments.FragmentThree"
+              android:label="Three" tools:layout="@layout/fragment_three">
+        <action android:id="@+id/next_action" app:destination="@id/destination_four"/>
+        <action android:id="@+id/home_action" app:destination="@id/destination_home"/>
+    </fragment>
+    <fragment android:id="@+id/destination_four" android:name="com.agarcia.navigationcomponent.Fragments.FragmentFour"
+              android:label="Four" tools:layout="@layout/fragment_four"/>
+    <fragment android:id="@+id/destination_settings"
+              android:name="com.agarcia.navigationcomponent.Fragments.SettingFragment"
+              android:label="Setting" tools:layout="@layout/fragment_setting"/>
+</navigation>
